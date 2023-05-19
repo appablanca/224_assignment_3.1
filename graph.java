@@ -48,6 +48,8 @@ public class graph {
             adj[v].add(e);
             adj[w].add(e);
         }
+
+        public void addCapacity ()
         
         public Iterable <Edge> adj(int v) {
             return adj[v];
