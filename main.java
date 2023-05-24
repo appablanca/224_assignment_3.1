@@ -19,9 +19,11 @@ public class main {
 
         sc.nextLine();
 
+        /*
         for (int i :capacity) {
             System.out.println(i);
         }
+        */
 
         for (int i = 0; i < connections; i++) {
             int a = sc.nextInt();
@@ -32,6 +34,13 @@ public class main {
             sc.nextLine();
         }
 
+        sc.nextLine();
+
+        K = sc.nextInt();
+
+        for (int i = 0; i<K;i++){
+            System.out.print(fee+capacity[i]+" ");
+        }
         
         Dijkstra dijkstra = new Dijkstra(g,1);
         
